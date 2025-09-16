@@ -1,2 +1,6 @@
 # Recommendation-System
-An AI agent that asks the user the name of a movie and recommends similar movies that it has learnt.
+An AI agent that asks the user the name of a movie and recommends similar movies that it has learnt from a dataset downloaded from [Kaggle](https://www.kaggle.com/). The underlying model was trained using the K-Nearest Neighbors algorithm provided by the [scikit-learn](https://scikit-learn.org/stable/index.html) library. Other scikit-learn functions used are [cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html), [OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html), [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html). [sparce.hstack](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.hstack.html) from [Scipy](https://scipy.org/). [Pandas](https://pandas.pydata.org/) and [numpy](https://numpy.org/) was also used in the project.
+
+How it works is that it detects if it has learnt about the mentioned movie. If it has, it looks for its genre and recommends movies from the same genres.
+
+**MAKE SURE THE AFOREMENTIONED LIBRARIES ARE INSTALLED BEFORE EXECUTING THE CODE**
